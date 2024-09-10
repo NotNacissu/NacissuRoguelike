@@ -77,19 +77,19 @@ class MainMenu(input_handlers.BaseEventHandler):
 
     def on_render(self, console: tcod.Console) -> None:
         """Render the main menu on a background image."""
-        console.draw_semigraphics(background_image, 0, 0)
+        #console.draw_semigraphics(background_image, 0, 0)
 
         console.print(
             console.width // 2,
             console.height // 2 - 4,
-            "TOMBS OF THE ANCIENT KINGS",
+            "NARCISSUS FORGOTTEN CATACOMBS",
             fg=color.menu_title,
             alignment=tcod.CENTER,
         )
         console.print(
             console.width // 2,
             console.height - 2,
-            "By (Your name here)",
+            "By Nacissu",
             fg=color.menu_title,
             alignment=tcod.CENTER,
         )
